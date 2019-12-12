@@ -1,0 +1,2 @@
+class Hoover
+end
