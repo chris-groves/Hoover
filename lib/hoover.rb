@@ -2,8 +2,8 @@ class Hoover
 
   attr_accessor :directions, :directions_array, :starting_x_coordinate, :starting_y_coordinate, :final_position
 
-  def initialize(directions)
-    @starting_position = [0,0]
+  def initialize(starting_position, directions)
+    @starting_position = starting_position
     @starting_x_coordinate = 0
     @starting_y_coordinate = 0
     @directions = directions
