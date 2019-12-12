@@ -1,11 +1,11 @@
 class Hoover
 
-  attr_accessor :directions, :directions_array, :starting_x_coordinate, :starting_y_coordinate, :final_position
+  attr_accessor :directions, :directions_array, :starting_x_coordinate, :starting_y_coordinate, :starting_position, :final_position
 
   def initialize(starting_position, directions)
     @starting_position = starting_position
-    @starting_x_coordinate = 0
-    @starting_y_coordinate = 0
+    @starting_x_coordinate = @starting_position.split[0].to_i
+    @starting_y_coordinate = @starting_position.split[1].to_i
     @directions = directions
     @final_position = []
   end
